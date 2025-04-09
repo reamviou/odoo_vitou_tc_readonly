@@ -1,0 +1,1 @@
+# odoo_vitou_tc_readonly
