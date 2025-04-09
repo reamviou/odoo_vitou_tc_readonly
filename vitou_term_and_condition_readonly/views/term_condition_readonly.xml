@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- View for stock picking-->
+   
+    <record id="termcondition_readonly_list_view" model="ir.ui.view">
+    <field name="name">sale.order.form</field>
+    <field name="model">sale.order</field>
+    <field name="inherit_id" ref="sale.view_order_form"/>
+    <field name="arch" type="xml">
+        <xpath expr="//group[@name='note_group']" position="replace">
+
+            <group name="note_group" col="6" class="mt-2 mt-md-0">
+                            <group colspan="4" class="order-1 order-lg-0">
+                                <field  colspan="2" name="note" nolabel="1" readonly="1" placeholder="Terms and conditions..."/>
+                            </group>
+                            <group class="oe_subtotal_footer d-flex order-0 order-lg-1 flex-column gap-0 gap-sm-3" colspan="2" name="sale_total">
+                                <field name="tax_totals" widget="account-tax-totals-field" nolabel="1" readonly="1"/>
+                            </group>
+                        </group>
+
+        </xpath>
+    </field>
+    </record>
+</odoo>
+
