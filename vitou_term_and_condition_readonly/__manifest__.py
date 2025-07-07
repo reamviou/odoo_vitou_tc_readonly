@@ -16,7 +16,7 @@
     'author': 'V Technologies',
     'company': 'V Technologies',
     'maintainer': 'V Technologies',
-    'website': 'https://www.odoocambodia.com',
+    'website': 'https://apps.odoo.com/apps/modules/browse?search=vitou',
     # 'price':'30.0',
     # 'currency':'USD',
     'depends': ['sale'],
